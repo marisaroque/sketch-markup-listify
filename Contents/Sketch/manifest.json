@@ -1,0 +1,15 @@
+{
+   "name": "Markup Listify",
+   "identifier": "Markup Listify",
+   "version": "1.0",
+   "description": "Get your HTML for lists.",
+   "authorEmail": "marisa.miranda.roque@gmail.com",
+   "author": "Marisa Roque",
+   "commands": [{
+         "script": "markup-listify.js",
+         "handler": "onRun",
+         "shortcut": "command alt l",
+         "name": "Get HTML for lists",
+         "identifier": "my.plugin.pagenames"
+      }],
+}
