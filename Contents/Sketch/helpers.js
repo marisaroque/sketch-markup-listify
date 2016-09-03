@@ -15,34 +15,26 @@ function is_text(layer) {
 	return [layer isMemberOfClass:[MSTextLayer class]]
 }
 
-function get_classname(layer) {
+function set_classname(name) {
 	var empty_string = "";
-	var layer_name = empty_string + layer.name();
 
-	// Lower case everything
-	layer_name = layer_name.toLowerCase();
+	// Lower case everything.
+	layer_name = name.toLowerCase();
 
 	// Make alphanumeric (removes all other characters).
-	layer_name  = layer_name.replace(/[^a-z0-9_\s-]/g, empty_string);
+	layer_name = layer_name.replace(/[^a-z0-9_\s-]/g, empty_string);
 
 	// Convert whitespaces and underscore to dash.
-	layer_name  = layer_name.replace(/[\s+_]+/g, "-");
+	layer_name = layer_name.replace(/[\s+_]+/g, "-");
 
 	return layer_name;
 }
 
-function set_classname(name) {
+function get_classname(layer) {
 	var empty_string = "";
+	var name = empty_string + layer.name();
 
-	// Lower case everything
-	layer_name = name.toLowerCase();
-
-	// Make alphanumeric (removes all other characters).
-	layer_name  = layer_name.replace(/[^a-z0-9_\s-]/g, empty_string);
-
-	// Convert whitespaces and underscore to dash.
-	layer_name  = layer_name.replace(/[\s+_]+/g, "-");
-
+	layer_name = set_classname(name);
 	return layer_name;
 }
 
@@ -115,11 +107,11 @@ var clipboard = {
 		this.pasteBoard = NSPasteboard.generalPasteboard();
 	},
 	set: function(text) {
-		if(typeof text === 'undefined') {
+		if (typeof text === 'undefined') {
 			return null;
 		}
 
-		if(!this.pasteBoard) {
+		if (!this.pasteBoard) {
 			this.init();
 		}
 
@@ -129,7 +121,7 @@ var clipboard = {
 		return true;
 	},
 	get: function() {
-		if(!this.pasteBoard) {
+		if (!this.pasteBoard) {
 			this.init();
 		}
 

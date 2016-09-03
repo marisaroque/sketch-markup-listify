@@ -5,7 +5,7 @@ var onRun = function(context) {
 	var doc       = context.document;
 	var selection = context.selection;
 
-	// If nothing was selected.
+	// If nothing is selected.
 	if ([selection count] < 1) {
 		alert("Nothing was selected.", 
 		"Please select, at least, one text layer or group containing text layers.");
@@ -30,7 +30,7 @@ var onRun = function(context) {
 		}
 	}
 
-	// If selection doesn't include text layers.
+	// If the selection doesn't include text layers.
 	if (text_layers_in_group.length == 0 && text_layers.length == 0 ) {
 		alert("No text layers were selected.", 
 		"Please select, at least, one text layer or group containing text layers.");
