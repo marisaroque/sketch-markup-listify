@@ -1,12 +1,10 @@
 # Sketch Markup Listify Plugin
 
-![Markup Listify Hero](https://dl.dropboxusercontent.com/u/11299185/logo.png)
+![Markup Listify Hero](https://dl.dropboxusercontent.com/u/11299185/logo-small.png)
 
 ## What is Markup Listify?
 
-The idea behind this plugin is to make it fast and easy to convert and copy your text layers or groups with text layers into HTML lists.
-
-A Sketch 3 plugin built to make the life of every designer and front-end developer a little bit easier.  
+A Sketch 3 plugin built to make the life of every designer and front-end developer a little bit easier. The idea behind this plugin is to make it fast and easy to convert and copy your text layers or groups with text layers into HTML lists. 
 
 ## How will it help?
 
@@ -35,14 +33,14 @@ First of all you need to have [Sketch 3](http://bohemiancoding.com/sketch/) inst
 
 ## Roadmap & Feature Ideas
 
-* [ ] Build relations between text layers and its sub-groups.
-* [ ] Create an option to select the type of lists tag, like, `ul`, `ol` or `option`.
-* [ ] Create an option to select the tags that might need to be inserted inside `li` tag, like, for example, `li > a`, `li > p`, `li > span`, etc.
-* [ ] Find a solution for handling invisible layers or group of layers. 
-* [ ] Create an option to copy Pug (old Jade) and Handlebars.
-* [ ] Create an option to copy the JSON corresponding to the selection made.
-* [ ] Consider the possibility of creating pasteable markup lists with images, text and shapes.
-* [ ] Consider the possibility of developing the inverse action, i.e., have a HTML list and be able to convert it into groups and/or text layers.
+[ ] Build relations between text layers and its sub-groups.
+[ ] Create an option to select the type of list tags, like, `ul`, `ol` or `option`.
+[ ] Create an option to select the tags that might need to be inserted inside `li` tags, like, for example, `li > a`, `li > p`, `li > span`, etc.
+[ ] Find a solution for handling invisible layers or group of layers.
+[ ] Create an option to copy Pug (old Jade) and Handlebars.
+[ ] Create an option to copy the JSON corresponding to the selection made.
+[ ] Consider the possibility of creating pasteable markup lists with images, text and shapes.
+[ ] Consider the possibility of developing the inverse action, i.e., have an HTML list and be able to convert it into groups and/or text layers.
 
 
 ## Feedback
