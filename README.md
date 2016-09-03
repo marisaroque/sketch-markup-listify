@@ -16,20 +16,20 @@ Using Sketch Markup Listify plugin you can speed up your HTML coding process whe
 
 To get your markup list pasteable, please select text layers, groups of layers (with text layers) or both, and then go to `Plugins ▸ Markup Listify`, or just press the keyboard shortcut `cmd + ⌥ + l`, and voilá. But nothing speaks better than an image:
 
-![Markup Listify Demo](https://dl.dropboxusercontent.com/u/11299185/demo.gif)
+![Markup Listify Demo](https://dl.dropboxusercontent.com/u/11299185/demo1.gif)
 
 ## Installation
 
 First of all you need to have [Sketch 3](http://bohemiancoding.com/sketch/) installed. Next, there are several ways to install this awesome plugin, so choose the best option for you.
 
 ##### Quick install (best way to go for rushed people)
-1. Download the [zip file](https://github.com/marisaroque/markup-listify.zip) with the Markup Listify and unzip.
+1. Download the [zip file](https://github.com/marisaroque/sketch-markup-listify/archive/master.zip) with the Markup Listify and unzip.
 2. Double click Markup Listify.sketchplugin to install (while Sketch is open).
 3. You can find the plugin in the `Plugins Menu ▸ Markup Listify`.
 
 ##### Git clone (best way to go for git lovers)
 1. Using a command line app (Terminal, iTerm, etc), navigate to the Sketch Plugins directory. This is different depending on your set up. If you're unsure, open Sketch and go to the `Plugins Menu ▸ Manage Plugins... ▸ Show Plugins Folder`.
-2. Once you're in the Plugins directory `git clone https://github.com/marisaroque/markup-listify.git` or your fork.
+2. Once you're in the Plugins directory `git clone https://github.com/marisaroque/sketch-markup-listify.git` or your fork.
 3. You can find the plugin in the `Plugins Menu ▸ Markup Listify`.
 
 
@@ -52,4 +52,4 @@ If you discover any issues or have questions regarding usage feel free to ping m
 
 ## License
 
-Sketch Markup Listify plugin is released under the MIT license. See [LICENSE](LICENSE) for details.
+Sketch Markup Listify plugin is released under the MIT license. See [LICENSE](LICENSE.md) for details.
