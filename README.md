@@ -1,7 +1,6 @@
 # Sketch Markup Listify Plugin
 
-![Sketch Markup Listify Hero](https://dl.dropboxusercontent.com/u/11299185/logo-small.png)
-
+![Sketch Markup Listify Hero](https://dl.dropboxusercontent.com/u/11299185/Logo.png)
 
 ## What is Sketch Markup Listify?
 
