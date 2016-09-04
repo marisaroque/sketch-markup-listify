@@ -31,6 +31,11 @@ First of all you need to have [Sketch 3](http://bohemiancoding.com/sketch/) inst
 3. You can find the plugin in the `Plugins Menu ▸ Markup Listify`.
 
 
+## System Requirements
+
+Sketch Markup Listify has been tested on Sketch (version 39.1) on OS X El Capitan. If you have any problems, drop me a line.
+
+
 ## Roadmap & Feature Ideas
 
 * [ ] Build relations between text layers and its sub-groups.
