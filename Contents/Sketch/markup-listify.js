@@ -19,7 +19,7 @@ var onRun = function(context) {
 	for (var i = [selection count] - 1; i >= 0; i--) {
 		var layer = selection[i];
 		
-		if (is_group(layer)) {			
+		if (is_group(layer)) {
 			text_layers_in_group = select_text_layers([layer layers]);
 
 			var classname = get_classname(layer);

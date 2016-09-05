@@ -86,7 +86,7 @@ function select_text_layers(layers) {
 	for (var i = layers.length - 1; i >= 0; i--) {
 		var layer = layers[i];
 
-		if(is_group(layer)) {
+		if (is_group(layer)) {
 			var obj = {};
 			obj.name = layer.name();
 			obj.nodes = select_text_layers([layer layers]);
@@ -102,7 +102,7 @@ function select_text_layers(layers) {
 }
 
 var clipboard = {
-	pasteBoard : null,
+	pasteBoard: null,
 	init: function() {
 		this.pasteBoard = NSPasteboard.generalPasteboard();
 	},
