@@ -83,6 +83,7 @@ function indent(string, num_of_indents) {
 }
 
 function create_markup_list(list, classname, type) {
+
 	var html = "";
 
 	if (list.length == 0) {
@@ -124,6 +125,7 @@ function create_markup_list(list, classname, type) {
 	};
 
 	html += '</ul>\n';
+	
 	return html;
 }
 
