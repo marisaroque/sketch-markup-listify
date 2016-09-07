@@ -5,11 +5,46 @@
 	"description": "Get your HTML for lists.",
 	"authorEmail": "marisa.miranda.roque@gmail.com",
 	"author": "Marisa Roque",
-	"commands": [{
-		"script": "markup-listify.js",
-		"handler": "onRun",
-		"shortcut": "command alt l",
-		"name": "Get HTML for lists",
-		"identifier": "my.plugin.pagenames"
-	}],
+	"homepage": "https://github.com/marisaroque/sketch-markup-listify",
+
+	"commands": [
+		{
+			"name": "Get HTML for lists",
+			"identifier": "command_html",
+			"shortcut": "command alt l",
+			"script": "markup-listify.js",
+			"handler": "onRun"
+		},
+		{
+			"name": "Get Jade for lists",
+			"identifier": "command_jade",
+			"shortcut": "command alt l",
+			"script": "jade-listify.js",
+			"handler": "onRun"
+		},
+		{
+			"name": "Get Markdown for lists",
+			"identifier": "command_markdown",
+			"shortcut": "command alt l",
+			"script": "markdown-listify.js",
+			"handler": "onRun"
+		},
+		{
+			"name": "Get HAML for lists",
+			"identifier": "command_haml",
+			"shortcut": "command alt l",
+			"script": "haml-listify.js",
+			"handler": "onRun"
+		}
+	],
+
+	"menu": {
+		"title": "Markup Listify",
+		"items": [
+			"command_html",
+			"command_jade",
+			"command_markdown",
+			"command_haml"
+		]
+	}
 }

@@ -1,3 +1,32 @@
+var clipboard = {
+	pasteBoard: null,
+	init: function() {
+		this.pasteBoard = NSPasteboard.generalPasteboard();
+	},
+	set: function(text) {
+		if (typeof text === 'undefined') {
+			return null;
+		}
+
+		if (!this.pasteBoard) {
+			this.init();
+		}
+
+		this.pasteBoard.declareTypes_owner([NSPasteboardTypeString], null);
+		this.pasteBoard.setString_forType(text, NSPasteboardTypeString);
+
+		return true;
+	},
+	get: function() {
+		if (!this.pasteBoard) {
+			this.init();
+		}
+
+		var text = this.pasteBoard.stringForType(NSPasteboardTypeString);
+		return text.toString();
+	}
+};
+
 function copy_markup_list(list) {
 	clipboard.set(list);
 }
@@ -53,26 +82,44 @@ function indent(string, num_of_indents) {
 	return string;
 }
 
-function create_markup_list(list, classname) {
-  var html = '<ul class="' + classname + '">\n';
+function create_markup_list(list, classname, type) {
+	var html = "";
 
-  if (list.length == 0) {
-	return list;
-  }
+	if (list.length == 0) {
+		return html;
+	}
+
+	html += '<ul class="' + classname + '">\n';
 
 	for (var i = 0; i < list.length; i++) {
 		var item = list[i];
 		var sublist = item.nodes;
 
+
+
 		if (Array.isArray(sublist)) {
 			var classname = set_classname(item.name);
 
 			html += indent("<li>\n", 1);
-			html += indent(create_markup_list(sublist, classname), 2);
+			html += indent(create_markup_list(sublist, classname, type), 2);
 			html += indent("</li>\n", 1);
 
 		} else {
-			html += indent("<li>" + get_text(item) + "</li>\n", 1);
+
+			switch (type) {
+				case "ul > li > a":
+					html += indent('<li><a href="#">' + get_text(item) + "</a></li>\n", 1);
+					break
+				case "ul > li > p":
+					html += indent("<li><p>" + get_text(item) + "</p></li>\n", 1);
+					break
+				case "ul > li > span":
+					html += indent("<li><span>" + get_text(item) + "</span></li>\n", 1);
+					break
+				default:
+					html += indent("<li>" + get_text(item) + "</li>\n", 1);
+			}
+
 		}
 	};
 
@@ -81,16 +128,19 @@ function create_markup_list(list, classname) {
 }
 
 function create_jade_list(list, classname) {
+	var html = "";
 
-	var html = "ul";
+	if (list.length == 0) {
+		return html;
+	}
+
+	html = "ul";
+
 	if (classname) {
 		html += "." + classname;
 	}
- 	html += "\n";
 
-	if (list.length == 0) {
-		return list;
-	}
+ 	html += "\n";
 
 	for (var i = 0; i < list.length; i++) {
 		var item = list[i];
@@ -111,16 +161,19 @@ function create_jade_list(list, classname) {
 }
 
 function create_haml_list(list, classname) {
+	var html = "";
 
-	var html = "%ul";
+	if (list.length == 0) {
+		return html;
+	}
+	
+	html = "%ul";
+	
 	if (classname) {
 		html += "." + classname;
 	}
- 	html += "\n";
 
-	if (list.length == 0) {
-		return list;
-	}
+ 	html += "\n";
 
 	for (var i = 0; i < list.length; i++) {
 		var item = list[i];
@@ -141,11 +194,10 @@ function create_haml_list(list, classname) {
 }
 
 function create_markdown_list(list) {
-
 	var html = "";
 
 	if (list.length == 0) {
-		return list;
+		return html;
 	}
 
 	for (var i = 0; i < list.length; i++) {
@@ -171,6 +223,7 @@ function select_text_layers(layers) {
 		var layer = layers[i];
 
 		if (is_group(layer)) {
+
 			var obj = {};
 			obj.name = layer.name();
 			obj.nodes = select_text_layers([layer layers]);
@@ -181,35 +234,6 @@ function select_text_layers(layers) {
 			text_layers.push(layer);
 		}
 	}
-
+	log(text_layers);
 	return text_layers;
 }
-
-var clipboard = {
-	pasteBoard: null,
-	init: function() {
-		this.pasteBoard = NSPasteboard.generalPasteboard();
-	},
-	set: function(text) {
-		if (typeof text === 'undefined') {
-			return null;
-		}
-
-		if (!this.pasteBoard) {
-			this.init();
-		}
-
-		this.pasteBoard.declareTypes_owner([NSPasteboardTypeString], null);
-		this.pasteBoard.setString_forType(text, NSPasteboardTypeString);
-
-		return true;
-	},
-	get: function() {
-		if (!this.pasteBoard) {
-			this.init();
-		}
-
-		var text = this.pasteBoard.stringForType(NSPasteboardTypeString);
-		return text.toString();
-	}
-};

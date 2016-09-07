@@ -15,17 +15,13 @@ var onRun = function(context) {
 	var text_layers_in_group = [];
 	var text_layers = [];
 	var markup_for_copy = "";
-
-	var list_type = [ "ul > li", "ul > li > a", "ul > li > p", "ul > li > span", "ol > li", "ol > li > a", "ol > li > p", "ol > li > span, select > option" ];
 	
 	for (var i = [selection count] - 1; i >= 0; i--) {
 		var layer = selection[i];
 		
 		if (is_group(layer)) {
 			text_layers_in_group = select_text_layers([layer layers]);
-
-			var classname = get_classname(layer);
-			markup_for_copy += create_markup_list(text_layers_in_group, classname, "ul > li > a");
+			markup_for_copy += create_markdown_list(text_layers_in_group);
 			
 		} else if (is_text(layer)) {
 			text_layers.push(layer);
@@ -39,8 +35,8 @@ var onRun = function(context) {
 		return;
 	}
 	
-	markup_for_copy += create_markup_list(text_layers, "", "ul > li > a");
+	markup_for_copy += create_markdown_list(text_layers);
 
-	doc.showMessage("Markup copied with sucess. ✔");
+	doc.showMessage("Markdown copied with sucess. ✔");
 	copy_markup_list(markup_for_copy);
 }
