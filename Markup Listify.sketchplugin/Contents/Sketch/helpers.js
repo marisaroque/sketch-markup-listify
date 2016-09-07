@@ -54,11 +54,13 @@ function indent(string, num_of_indents) {
 }
 
 function create_markup_list(list, classname) {
-  var html = '<ul class="' + classname + '">\n';
+	var html = "";
 
-  if (list.length == 0) {
-	return list;
-  }
+	if (list.length == 0) {
+		return html;
+	}
+
+	html += '<ul class="' + classname + '">\n';
 
 	for (var i = 0; i < list.length; i++) {
 		var item = list[i];
@@ -77,6 +79,7 @@ function create_markup_list(list, classname) {
 	};
 
 	html += '</ul>\n';
+	
 	return html;
 }
 
