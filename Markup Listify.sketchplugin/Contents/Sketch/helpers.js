@@ -80,6 +80,90 @@ function create_markup_list(list, classname) {
 	return html;
 }
 
+function create_jade_list(list, classname) {
+
+	var html = "ul";
+	if (classname) {
+		html += "." + classname;
+	}
+ 	html += "\n";
+
+	if (list.length == 0) {
+		return list;
+	}
+
+	for (var i = 0; i < list.length; i++) {
+		var item = list[i];
+		var sublist = item.nodes;
+
+		if (Array.isArray(sublist)) {
+			var classname = set_classname(item.name);
+
+			html += indent("li\n", 1);
+			html += indent(create_jade_list(sublist, classname), 2);
+
+		} else {
+			html += indent("li " + get_text(item) + "\n", 1);
+		}
+	};
+
+	return html;
+}
+
+function create_haml_list(list, classname) {
+
+	var html = "%ul";
+	if (classname) {
+		html += "." + classname;
+	}
+ 	html += "\n";
+
+	if (list.length == 0) {
+		return list;
+	}
+
+	for (var i = 0; i < list.length; i++) {
+		var item = list[i];
+		var sublist = item.nodes;
+
+		if (Array.isArray(sublist)) {
+			var classname = set_classname(item.name);
+
+			html += indent("%li\n", 1);
+			html += indent(create_haml_list(sublist, classname), 2);
+
+		} else {
+			html += indent("%li " + get_text(item) + "\n", 1);
+		}
+	};
+
+	return html;
+}
+
+function create_markdown_list(list) {
+
+	var html = "";
+
+	if (list.length == 0) {
+		return list;
+	}
+
+	for (var i = 0; i < list.length; i++) {
+		var item = list[i];
+		var sublist = item.nodes;
+
+		if (Array.isArray(sublist)) {
+			html += indent("* \n", 1);
+			html += indent(create_markdown_list(sublist), 1);
+
+		} else {
+			html += indent("* " + get_text(item) + "\n", 1);
+		}
+	};
+
+	return html;
+}
+
 function select_text_layers(layers) {
 	var text_layers = [];
 
