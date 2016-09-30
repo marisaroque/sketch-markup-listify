@@ -74,7 +74,7 @@ function create_markup_list(list, classname) {
 			html += indent("</li>\n", 1);
 
 		} else {
-			html += indent("<li>" + get_text(item) + "</li>\n", 1);
+			html += indent("<li>" + encodeHTMLstring(get_text(item)) + "</li>\n", 1);
 		}
 	};
 
@@ -102,6 +102,26 @@ function select_text_layers(layers) {
 	}
 
 	return text_layers;
+}
+
+function encodeHTMLstring(string) {
+	return string
+		.replace(/&/g, '&amp;')
+		.replace(/</g, '&lt;')
+		.replace(/>/g, '&gt;')
+		.replace(/"/g, '&quot;')
+		.replace(/'/g, '&#x27;')
+		.replace(/\//g, '&#x2F;');
+}
+
+function decodeHTMLstring(string) {
+	return string
+		.replace(/&amp;/g, '&')
+		.replace(/&lt;/g, '<')
+		.replace(/&gt;/g, '>')
+		.replace(/&quot;/g, '"')
+		.replace(/&#x27;/g, '\'')
+		.replace(/&#x2F;/g, '/');
 }
 
 var clipboard = {
