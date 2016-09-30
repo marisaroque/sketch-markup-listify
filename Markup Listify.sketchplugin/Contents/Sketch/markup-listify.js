@@ -39,6 +39,6 @@ var onRun = function(context) {
 
 	markup_for_copy += create_markup_list(text_layers, "");
 
-	doc.showMessage("Markup copied with sucess. ✔");
+	doc.showMessage("✔ Markup successfully copied.");
 	copy_markup_list(markup_for_copy);
 }
