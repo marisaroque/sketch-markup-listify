@@ -1,10 +1,11 @@
 {
-	"name": "Markup Listify",
-	"identifier": "Markup Listify",
-	"version": "1.0",
-	"description": "Get your HTML for lists.",
-	"authorEmail": "marisa.miranda.roque@gmail.com",
 	"author": "Marisa Roque",
+	"authorEmail": "marisa.miranda.roque@gmail.com",
+	"description": "Get your HTML for lists.",
+	"homepage" : "https:\/\/github.com\/marisaroque\/sketch-markup-listify",
+	"identifier": "Markup Listify",
+	"name": "Markup Listify",
+	"version": "1.0",
 	"commands": [{
 		"script": "markup-listify.js",
 		"handler": "onRun",
