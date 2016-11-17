@@ -4,7 +4,7 @@
 
 ## What is Sketch Markup Listify?
 
-A Sketch 3 plugin built to make the life of every designer and front-end developer a little bit easier. The idea behind this plugin is to make it fast and easy to convert and copy your text layers or groups with text layers into HTML lists. 
+A Sketch plugin built to make the life of every designer and front-end developer a little bit easier. The idea behind this plugin is to make it fast and easy to convert and copy your text layers or groups with text layers into HTML lists. 
 
 ## How will it help?
 
@@ -18,7 +18,7 @@ To get your markup list pasteable, please select text layers, groups of layers (
 
 ## Installation
 
-First of all you need to have [Sketch 3](http://bohemiancoding.com/sketch/) installed. Next, there are several ways to install this awesome plugin, so choose the best option for you.
+First of all you need to have [Sketch](http://bohemiancoding.com/sketch/) installed. Next, there are several ways to install this awesome plugin, so choose the best option for you.
 
 ##### Quick install (best way to go for rushed people)
 1. Download the [zip file](https://github.com/marisaroque/sketch-markup-listify/archive/master.zip) with the Markup Listify and unzip.
@@ -33,7 +33,7 @@ First of all you need to have [Sketch 3](http://bohemiancoding.com/sketch/) inst
 
 ## System Requirements
 
-Sketch Markup Listify has been tested on Sketch (version 39.1) on OS X El Capitan. If you have any problems, drop me a line.
+Sketch Markup Listify has been tested on Sketch (version 41) on MacOS Sierra. If you have any problems, drop me a line.
 
 
 ## Roadmap & Feature Ideas
