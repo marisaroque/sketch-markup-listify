@@ -45,7 +45,7 @@ function onRunMarkup(context) {
 		copy_markup_list(markup_for_copy);
 
 	} catch (e) {
-		log("Oops. Something went wrong.");
+		alert(e, "Oops. Something went wrong.");
 	}
 }
 
@@ -91,7 +91,7 @@ function onRunMarkdown(context) {
 		copy_markup_list(markup_for_copy);
 
 	} catch (e) {
-		log("Oops. Something went wrong.");
+		alert(e, "Oops. Something went wrong.");
 	}
 }
 
@@ -139,7 +139,7 @@ function onRunJade(context) {
 		copy_markup_list(markup_for_copy);
 
 	} catch (e) {
-		log("Oops. Something went wrong.");
+		alert(e, "Oops. Something went wrong.");
 	}
 }
 
@@ -186,6 +186,6 @@ function onRunHaml(context) {
 		copy_markup_list(markup_for_copy);
 
 	} catch (e) {
-		log("Oops. Something went wrong.");
+		alert(e, "Oops. Something went wrong.");
 	}
 }
