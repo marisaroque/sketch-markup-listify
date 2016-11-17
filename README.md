@@ -16,6 +16,17 @@ To get your markup list pasteable, please select text layers, groups of layers (
 
 ![Sketch Markup Listify Demo](https://dl.dropboxusercontent.com/u/11299185/demo1.gif)
 
+
+##### Shortcuts
+
+Command            | Shortcut                           | Description
+:----------------  | :--------------------------------- | :--------------------------------
+Generate HTML      | *`alt` + `cmd` +* **`L`**          | Generate HTML lists pasteable.
+Generate Jade      | *`ctrl` + `alt` + `cmd` +* **`J`** | Generate Jade lists pasteable.
+Generate Markdown  | *`ctrl` + `alt` + `cmd` +* **`M`** | Generate Markdown lists pasteable.
+Generate HAML      | *`ctrl` + `alt` + `cmd` +* **`H`** | Generate HAML lists pasteable.
+
+
 ## Installation
 
 First of all you need to have [Sketch](http://bohemiancoding.com/sketch/) installed. Next, there are several ways to install this awesome plugin, so choose the best option for you.
