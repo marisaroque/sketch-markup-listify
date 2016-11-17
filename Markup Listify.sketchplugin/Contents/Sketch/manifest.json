@@ -6,45 +6,43 @@
 	"authorEmail": "marisa.miranda.roque@gmail.com",
 	"author": "Marisa Roque",
 	"homepage": "https://github.com/marisaroque/sketch-markup-listify",
-
 	"commands": [
 		{
 			"name": "Get HTML for lists",
-			"identifier": "command_html",
+			"identifier": "onRunMarkup",
 			"shortcut": "command alt l",
-			"script": "markup-listify.js",
-			"handler": "onRun"
+			"script": "listify.js",
+			"handler": "onRunMarkup"
 		},
 		{
 			"name": "Get Jade for lists",
-			"identifier": "command_jade",
-			"shortcut": "command alt l",
-			"script": "jade-listify.js",
-			"handler": "onRun"
+			"identifier": "onRunJade",
+			"shortcut": "command alt j",
+			"script": "listify.js",
+			"handler": "onRunJade"
 		},
 		{
 			"name": "Get Markdown for lists",
-			"identifier": "command_markdown",
-			"shortcut": "command alt l",
-			"script": "markdown-listify.js",
-			"handler": "onRun"
+			"identifier": "onRunMarkdown",
+			"shortcut": "command alt m",
+			"script": "listify.js",
+			"handler": "onRunMarkdown"
 		},
 		{
 			"name": "Get HAML for lists",
-			"identifier": "command_haml",
-			"shortcut": "command alt l",
-			"script": "haml-listify.js",
-			"handler": "onRun"
+			"identifier": "onRunHaml",
+			"shortcut": "command alt h",
+			"script": "listify.js",
+			"handler": "onRunHaml"
 		}
 	],
-
 	"menu": {
 		"title": "Markup Listify",
 		"items": [
-			"command_html",
-			"command_jade",
-			"command_markdown",
-			"command_haml"
+			"onRunMarkup",
+			"onRunJade",
+			"onRunMarkdown",
+			"onRunHaml"
 		]
 	}
 }
