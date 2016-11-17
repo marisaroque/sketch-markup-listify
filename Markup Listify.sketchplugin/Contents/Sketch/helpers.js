@@ -1,32 +1,3 @@
-var clipboard = {
-	pasteBoard: null,
-	init: function() {
-		this.pasteBoard = NSPasteboard.generalPasteboard();
-	},
-	set: function(text) {
-		if (typeof text === 'undefined') {
-			return null;
-		}
-
-		if (!this.pasteBoard) {
-			this.init();
-		}
-
-		this.pasteBoard.declareTypes_owner([NSPasteboardTypeString], null);
-		this.pasteBoard.setString_forType(text, NSPasteboardTypeString);
-
-		return true;
-	},
-	get: function() {
-		if (!this.pasteBoard) {
-			this.init();
-		}
-
-		var text = this.pasteBoard.stringForType(NSPasteboardTypeString);
-		return text.toString();
-	}
-};
-
 function copy_markup_list(list) {
 	clipboard.set(list);
 }
@@ -109,16 +80,16 @@ function create_markup_list(list, classname, type) {
 
 			switch (type) {
 				case "ul > li > a":
-					html += indent('<li><a href="#">' + get_text(item) + "</a></li>\n", 1);
+					html += indent('<li><a href="#">' + encodeHTMLstring(get_text(item) + "</a></li>\n", 1);
 					break
 				case "ul > li > p":
-					html += indent("<li><p>" + get_text(item) + "</p></li>\n", 1);
+					html += indent("<li><p>" + encodeHTMLstring(get_text(item) + "</p></li>\n", 1);
 					break
 				case "ul > li > span":
-					html += indent("<li><span>" + get_text(item) + "</span></li>\n", 1);
+					html += indent("<li><span>" + encodeHTMLstring(get_text(item) + "</span></li>\n", 1);
 					break
 				default:
-					html += indent("<li>" + get_text(item) + "</li>\n", 1);
+					html += indent("<li>" + encodeHTMLstring(get_text(item) + "</li>\n", 1);
 			}
 
 		}
@@ -236,6 +207,46 @@ function select_text_layers(layers) {
 			text_layers.push(layer);
 		}
 	}
+
 	log(text_layers);
 	return text_layers;
 }
+
+function encodeHTMLstring(string) {
+	return string
+		.replace(/&/g, '&amp;')
+		.replace(/</g, '&lt;')
+		.replace(/>/g, '&gt;')
+		.replace(/"/g, '&quot;')
+		.replace(/'/g, '&#x27;');
+}
+
+var clipboard = {
+	pasteBoard: null,
+	init: function() {
+		this.pasteBoard = NSPasteboard.generalPasteboard();
+	},
+	set: function(text) {
+		if (typeof text === 'undefined') {
+			return null;
+		}
+
+		if (!this.pasteBoard) {
+			this.init();
+		}
+
+		this.pasteBoard.declareTypes_owner([NSPasteboardTypeString], null);
+		this.pasteBoard.setString_forType(text, NSPasteboardTypeString);
+
+		return true;
+	},
+	get: function() {
+		if (!this.pasteBoard) {
+			this.init();
+		}
+
+		var text = this.pasteBoard.stringForType(NSPasteboardTypeString);
+		return text.toString();
+	}
+};
+
