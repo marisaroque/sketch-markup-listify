@@ -80,16 +80,16 @@ function create_markup_list(list, classname, type) {
 
 			switch (type) {
 				case "ul > li > a":
-					html += indent('<li><a href="#">' + encodeHTMLstring(get_text(item) + "</a></li>\n", 1);
+					html += indent('<li><a href="#">' + encodeHTMLstring(get_text(item)) + "</a></li>\n", 1);
 					break
 				case "ul > li > p":
-					html += indent("<li><p>" + encodeHTMLstring(get_text(item) + "</p></li>\n", 1);
+					html += indent("<li><p>" + encodeHTMLstring(get_text(item)) + "</p></li>\n", 1);
 					break
 				case "ul > li > span":
-					html += indent("<li><span>" + encodeHTMLstring(get_text(item) + "</span></li>\n", 1);
+					html += indent("<li><span>" + encodeHTMLstring(get_text(item)) + "</span></li>\n", 1);
 					break
 				default:
-					html += indent("<li>" + encodeHTMLstring(get_text(item) + "</li>\n", 1);
+					html += indent("<li>" + encodeHTMLstring(get_text(item)) + "</li>\n", 1);
 			}
 
 		}
@@ -126,7 +126,7 @@ function create_jade_list(list, classname) {
 			html += indent(create_jade_list(sublist, classname), 2);
 
 		} else {
-			html += indent("li " + get_text(item) + "\n", 1);
+			html += indent("li " + encodeHTMLstring(get_text(item)) + "\n", 1);
 		}
 	};
 
@@ -159,7 +159,7 @@ function create_haml_list(list, classname) {
 			html += indent(create_haml_list(sublist, classname), 2);
 
 		} else {
-			html += indent("%li " + get_text(item) + "\n", 1);
+			html += indent("%li " + encodeHTMLstring(get_text(item)) + "\n", 1);
 		}
 	};
 
@@ -182,7 +182,7 @@ function create_markdown_list(list) {
 			html += indent(create_markdown_list(sublist), 1);
 
 		} else {
-			html += indent("* " + get_text(item) + "\n", 1);
+			html += indent("* " + encodeHTMLstring(get_text(item)) + "\n", 1);
 		}
 	};
 
@@ -260,4 +260,3 @@ var clipboard = {
 		return text.toString();
 	}
 };
-
