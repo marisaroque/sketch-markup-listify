@@ -11,28 +11,28 @@
 			"name": "Get HTML for lists",
 			"identifier": "onRunMarkup",
 			"shortcut": "command alt l",
-			"script": "listify.js",
+			"script": "markup-listify.js",
 			"handler": "onRunMarkup"
 		},
 		{
 			"name": "Get Jade for lists",
 			"identifier": "onRunJade",
 			"shortcut": "command alt j",
-			"script": "listify.js",
+			"script": "markup-listify.js",
 			"handler": "onRunJade"
 		},
 		{
 			"name": "Get Markdown for lists",
 			"identifier": "onRunMarkdown",
 			"shortcut": "command alt m",
-			"script": "listify.js",
+			"script": "markup-listify.js",
 			"handler": "onRunMarkdown"
 		},
 		{
 			"name": "Get HAML for lists",
 			"identifier": "onRunHaml",
 			"shortcut": "command alt h",
-			"script": "listify.js",
+			"script": "markup-listify.js",
 			"handler": "onRunHaml"
 		}
 	],
