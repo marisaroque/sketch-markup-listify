@@ -1,7 +1,6 @@
 @import "helpers.js"
 
 var onRun = function(context) {
-
 	try {
 		var doc       = context.document;
 		var selection = context.selection;
@@ -44,6 +43,6 @@ var onRun = function(context) {
 		copy_markup_list(markup_for_copy);
 
 	} catch (e) {
-		log("Oops. Something went wrong.");
+		alert(e, "Oops. Something went wrong.");
 	}
 }
