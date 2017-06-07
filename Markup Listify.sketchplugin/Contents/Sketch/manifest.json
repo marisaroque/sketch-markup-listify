@@ -1,13 +1,13 @@
 {
 	"name": "Markup Listify",
-	"identifier": "sketch-markup-listify",
-	"appcast": "https://api.sketchpacks.com/v1/plugins/sketch-markup-listify/appcast",
-	"version": "1.1",
-	"compatibleVersion": 41,
 	"description": "Get your HTML for lists.",
 	"authorEmail": "marisa.miranda.roque@gmail.com",
 	"author": "Marisa Roque",
 	"homepage": "https://github.com/marisaroque/sketch-markup-listify",
+	"identifier": "sketch-markup-listify",
+	"appcast": "https://api.sketchpacks.com/v1/plugins/sketch-markup-listify/appcast",
+	"version": "1.1",
+	"compatibleVersion": 41,
 	"commands": [{
 		"script": "markup-listify.js",
 		"handler": "onRun",
