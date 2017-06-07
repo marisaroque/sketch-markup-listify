@@ -1,5 +1,8 @@
 # Sketch Markup Listify Plugin
 
+[![Download from Sketchpacks.com](https://badges.sketchpacks.com/plugins/sketch-markup-listify/version.svg)](https://api.sketchpacks.com/v1/plugins/sketch-markup-listify/download)
+[![Compatible Sketch Version](https://badges.sketchpacks.com/plugins/sketch-markup-listify/compatibility.svg)](https://sketchpacks.com/marisaroque/sketch-markup-listify)
+
 ![Sketch Markup Listify Hero](https://dl.dropboxusercontent.com/u/11299185/logo.svg)
 
 ## What is Sketch Markup Listify?
