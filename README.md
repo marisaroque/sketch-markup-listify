@@ -46,7 +46,7 @@ With Sketch Runner, just go to the `install` command and search for `Sketch Mark
 
 ## System Requirements
 
-Sketch Markup Listify has been tested on Sketch (version 41) on MacOS Sierra. If you have any problems, drop me a line.
+Sketch Markup Listify has been tested on Sketch (version 46) on MacOS Sierra. If you have any problems, drop me a line.
 
 
 ## Roadmap & Feature Ideas
