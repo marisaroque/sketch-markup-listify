@@ -7,7 +7,7 @@
 
 ## What is Sketch Markup Listify?
 
-A Sketch plugin built to make the life of every designer and front-end developer a little bit easier. The idea behind this plugin is to make it fast and easy to convert and copy your text layers or groups with text layers into HTML lists. 
+A Sketch plugin built to make the life of every designer and front-end developer a little bit easier. The idea behind this plugin is to make it fast and easy to convert and copy your text layers or groups with text layers into HTML lists.
 
 ## How will it help?
 
@@ -32,6 +32,16 @@ First of all you need to have [Sketch](http://bohemiancoding.com/sketch/) instal
 1. Using a command line app (Terminal, iTerm, etc), navigate to the Sketch Plugins directory. This is different depending on your set up. If you're unsure, open Sketch and go to the `Plugins Menu ▸ Manage Plugins... ▸ Show Plugins Folder`.
 2. Once you're in the Plugins directory `git clone https://github.com/marisaroque/sketch-markup-listify.git` or your fork.
 3. You can find the plugin in the `Plugins Menu ▸ Markup Listify`.
+
+
+#### Install with Sketch Runner
+With Sketch Runner, just go to the `install` command and search for `Sketch Markup Listify`. Runner allows you to manage plugins and do much more to speed up your workflow in Sketch. [Download Runner here](http://www.sketchrunner.com).
+
+![Install Sketch Markup Listify via Runner](images/)
+
+<a href="http://bit.ly/SketchRunnerWebsite">
+  <img width="160" height="40" src="http://sketchrunner.com/img/badge_blue.png">
+</a>
 
 
 ## System Requirements
