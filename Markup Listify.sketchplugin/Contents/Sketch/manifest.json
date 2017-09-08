@@ -14,6 +14,6 @@
 		"handler": "onRun",
 		"shortcut": "command alt l",
 		"name": "Get HTML for lists",
-		"identifier": "my.plugin.pagenames"
+		"identifier": "onRun"
 	}],
 }
