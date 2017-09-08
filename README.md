@@ -44,7 +44,7 @@ With Sketch Runner, just go to the `install` command and search for `Sketch Mark
 </a>
 
 ##### Install with Sketchpacks
-[![Install Markup Listify with Sketchpacks](http://sketchpacks-com.s3.amazonaws.com/assets/badges/sketchpacks-badge-install.png "Install Markup Listify with Sketchpacks")](https://www.sketchpacks.com/marisaroque/sketch-markup-listify/install)
+<a href="https://www.sketchpacks.com/marisaroque/sketch-markup-listify/install"><img src="https://sketchpacks-com.s3.amazonaws.com/assets/badges/sketchpacks-badge-install.png" alt="Install Markup Listify with Sketchpacks" width="160"></a>
 
 
 ## System Requirements
