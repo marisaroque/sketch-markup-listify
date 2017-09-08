@@ -34,7 +34,7 @@ First of all you need to have [Sketch](http://bohemiancoding.com/sketch/) instal
 3. You can find the plugin in the `Plugins Menu ▸ Markup Listify`.
 
 
-#### Install with Sketch Runner
+##### Install with Sketch Runner
 With Sketch Runner, just go to the `install` command and search for `Sketch Markup Listify`. Runner allows you to manage plugins and do much more to speed up your workflow in Sketch. [Download Runner here](http://www.sketchrunner.com).
 
 ![Install Sketch Markup Listify via Runner](images/)
@@ -43,10 +43,13 @@ With Sketch Runner, just go to the `install` command and search for `Sketch Mark
   <img width="160" height="40" src="http://sketchrunner.com/img/badge_blue.png">
 </a>
 
+##### Install with Sketchpacks
+[![Install Markup Listify with Sketchpacks](http://sketchpacks-com.s3.amazonaws.com/assets/badges/sketchpacks-badge-install.png "Install Markup Listify with Sketchpacks")](https://www.sketchpacks.com/marisaroque/sketch-markup-listify/install
+
 
 ## System Requirements
 
-Sketch Markup Listify has been tested on Sketch (version 41) on MacOS Sierra. If you have any problems, drop me a line.
+Sketch Markup Listify has been tested on Sketch (version 46) on MacOS Sierra. If you have any problems, drop me a line.
 
 
 ## Roadmap & Feature Ideas
