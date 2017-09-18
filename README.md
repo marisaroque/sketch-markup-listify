@@ -1,10 +1,13 @@
 # Sketch Markup Listify Plugin
 
-![Sketch Markup Listify Hero](https://dl.dropboxusercontent.com/u/11299185/logo.svg)
+[![Download from Sketchpacks.com](https://badges.sketchpacks.com/plugins/sketch-markup-listify/version.svg)](https://api.sketchpacks.com/v1/plugins/sketch-markup-listify/download)
+[![Compatible Sketch Version](https://badges.sketchpacks.com/plugins/sketch-markup-listify/compatibility.svg)](https://sketchpacks.com/marisaroque/sketch-markup-listify)
+
+![Sketch Markup Listify Hero](https://www.dropbox.com/s/njz9nogblpjsg5b/logo.svg?dl=1)
 
 ## What is Sketch Markup Listify?
 
-A Sketch plugin built to make the life of every designer and front-end developer a little bit easier. The idea behind this plugin is to make it fast and easy to convert and copy your text layers or groups with text layers into HTML lists. 
+A Sketch plugin built to make the life of every designer and front-end developer a little bit easier. The idea behind this plugin is to make it fast and easy to convert and copy your text layers or groups with text layers into HTML lists.
 
 ## How will it help?
 
@@ -14,7 +17,7 @@ Using Sketch Markup Listify plugin you can speed up your HTML coding process whe
 
 To get your markup list pasteable, please select text layers, groups of layers (with text layers) or both, and then go to `Plugins ▸ Markup Listify`, or just press the keyboard shortcut `cmd + ⌥ + l`, and voilá. But nothing speaks better than an image:
 
-![Sketch Markup Listify Demo](https://dl.dropboxusercontent.com/u/11299185/demo1.gif)
+![Sketch Markup Listify Demo](https://www.dropbox.com/s/8q1s8uml73yad69/demo.gif?dl=1)
 
 
 ##### Shortcuts
@@ -41,10 +44,13 @@ First of all you need to have [Sketch](http://bohemiancoding.com/sketch/) instal
 2. Once you're in the Plugins directory `git clone https://github.com/marisaroque/sketch-markup-listify.git` or your fork.
 3. You can find the plugin in the `Plugins Menu ▸ Markup Listify`.
 
+##### Install with Sketchpacks
+<a href="https://www.sketchpacks.com/marisaroque/sketch-markup-listify/install"><img src="https://sketchpacks-com.s3.amazonaws.com/assets/badges/sketchpacks-badge-install.png" alt="Install Markup Listify with Sketchpacks" width="160"></a>
+
 
 ## System Requirements
 
-Sketch Markup Listify has been tested on Sketch (version 41) on MacOS Sierra. If you have any problems, drop me a line.
+Sketch Markup Listify has been tested on Sketch (version 46) on MacOS Sierra. If you have any problems, drop me a line.
 
 
 ## Roadmap & Feature Ideas
