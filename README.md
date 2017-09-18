@@ -3,7 +3,7 @@
 [![Download from Sketchpacks.com](https://badges.sketchpacks.com/plugins/sketch-markup-listify/version.svg)](https://api.sketchpacks.com/v1/plugins/sketch-markup-listify/download)
 [![Compatible Sketch Version](https://badges.sketchpacks.com/plugins/sketch-markup-listify/compatibility.svg)](https://sketchpacks.com/marisaroque/sketch-markup-listify)
 
-![Sketch Markup Listify Hero](https://dl.dropboxusercontent.com/u/11299185/logo.svg)
+![Sketch Markup Listify Hero](https://www.dropbox.com/s/njz9nogblpjsg5b/logo.svg?dl=1)
 
 ## What is Sketch Markup Listify?
 
@@ -17,7 +17,7 @@ Using Sketch Markup Listify plugin you can speed up your HTML coding process whe
 
 To get your markup list pasteable, please select text layers, groups of layers (with text layers) or both, and then go to `Plugins ▸ Markup Listify`, or just press the keyboard shortcut `cmd + ⌥ + l`, and voilá. But nothing speaks better than an image:
 
-![Sketch Markup Listify Demo](https://dl.dropboxusercontent.com/u/11299185/demo1.gif)
+![Sketch Markup Listify Demo](https://www.dropbox.com/s/8q1s8uml73yad69/demo.gif?dl=1)
 
 ## Installation
 
@@ -32,16 +32,6 @@ First of all you need to have [Sketch](http://bohemiancoding.com/sketch/) instal
 1. Using a command line app (Terminal, iTerm, etc), navigate to the Sketch Plugins directory. This is different depending on your set up. If you're unsure, open Sketch and go to the `Plugins Menu ▸ Manage Plugins... ▸ Show Plugins Folder`.
 2. Once you're in the Plugins directory `git clone https://github.com/marisaroque/sketch-markup-listify.git` or your fork.
 3. You can find the plugin in the `Plugins Menu ▸ Markup Listify`.
-
-
-##### Install with Sketch Runner
-With Sketch Runner, just go to the `install` command and search for `Sketch Markup Listify`. Runner allows you to manage plugins and do much more to speed up your workflow in Sketch. [Download Runner here](http://www.sketchrunner.com).
-
-![Install Sketch Markup Listify via Runner](images/)
-
-<a href="http://bit.ly/SketchRunnerWebsite">
-  <img width="160" height="40" src="http://sketchrunner.com/img/badge_blue.png">
-</a>
 
 ##### Install with Sketchpacks
 <a href="https://www.sketchpacks.com/marisaroque/sketch-markup-listify/install"><img src="https://sketchpacks-com.s3.amazonaws.com/assets/badges/sketchpacks-badge-install.png" alt="Install Markup Listify with Sketchpacks" width="160"></a>
