@@ -1,5 +1,7 @@
 @import "helpers.js";
 
+var LIST_TYPE = [ "ul > li", "ul > li > a", "ul > li > p", "ul > li > span", "ol > li", "ol > li > a", "ol > li > p", "ol > li > span, select > option" ];
+
 function onRunMarkup(context) {
 	try {
 		var doc       = context.document;
@@ -15,9 +17,11 @@ function onRunMarkup(context) {
 		var text_layers_in_group = [];
 		var text_layers = [];
 		var markup_for_copy = "";
-
-		var list_type = [ "ul > li", "ul > li > a", "ul > li > p", "ul > li > span", "ol > li", "ol > li > a", "ol > li > p", "ol > li > span, select > option" ];
 		
+		var choice = createSelect('Choose an option', LIST_TYPE, 1)
+		var type = LIST_TYPE[choice];
+		alert("Titulo.", type);
+
 		for (var i = [selection count] - 1; i >= 0; i--) {
 			var layer = selection[i];
 			

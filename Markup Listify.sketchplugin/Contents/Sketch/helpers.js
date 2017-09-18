@@ -1,3 +1,33 @@
+function createSelect(msg, items, selectedItemIndex){
+  selectedItemIndex = selectedItemIndex || 0
+
+  var accessory = NSComboBox.alloc().initWithFrame(NSMakeRect(0,0,200,25))
+  accessory.addItemsWithObjectValues(items)
+  accessory.selectItemAtIndex(selectedItemIndex)
+
+  var alert = NSAlert.alloc().init()
+  alert.setMessageText(msg)
+  alert.addButtonWithTitle('OK')
+  alert.addButtonWithTitle('Cancel')
+  alert.setAccessoryView(accessory)
+
+  var responseCode = alert.runModal()
+  // var sel = accessory.indexOfSelectedItem()
+  // return [responseCode, sel]
+  if (responseCode == 1000) {
+  	var selectedItem = accessory.indexOfSelectedItem();
+  	log(selectedItem);
+  	return selectedItem;
+  } else {
+  	return -1;
+  }
+}
+
+function valueAtIndex(view, index) {
+  return view.viewAtIndex(index).stringValue()
+};
+
+
 function copy_markup_list(list) {
 	clipboard.set(list);
 }
