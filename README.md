@@ -1,10 +1,13 @@
 # Sketch Markup Listify Plugin
 
+[![Download from Sketchpacks.com](https://badges.sketchpacks.com/plugins/sketch-markup-listify/version.svg)](https://api.sketchpacks.com/v1/plugins/sketch-markup-listify/download)
+[![Compatible Sketch Version](https://badges.sketchpacks.com/plugins/sketch-markup-listify/compatibility.svg)](https://sketchpacks.com/marisaroque/sketch-markup-listify)
+
 ![Sketch Markup Listify Hero](https://dl.dropboxusercontent.com/u/11299185/logo.svg)
 
 ## What is Sketch Markup Listify?
 
-A Sketch plugin built to make the life of every designer and front-end developer a little bit easier. The idea behind this plugin is to make it fast and easy to convert and copy your text layers or groups with text layers into HTML lists. 
+A Sketch plugin built to make the life of every designer and front-end developer a little bit easier. The idea behind this plugin is to make it fast and easy to convert and copy your text layers or groups with text layers into HTML lists.
 
 ## How will it help?
 
@@ -31,9 +34,22 @@ First of all you need to have [Sketch](http://bohemiancoding.com/sketch/) instal
 3. You can find the plugin in the `Plugins Menu ▸ Markup Listify`.
 
 
+##### Install with Sketch Runner
+With Sketch Runner, just go to the `install` command and search for `Sketch Markup Listify`. Runner allows you to manage plugins and do much more to speed up your workflow in Sketch. [Download Runner here](http://www.sketchrunner.com).
+
+![Install Sketch Markup Listify via Runner](images/)
+
+<a href="http://bit.ly/SketchRunnerWebsite">
+  <img width="160" height="40" src="http://sketchrunner.com/img/badge_blue.png">
+</a>
+
+##### Install with Sketchpacks
+<a href="https://www.sketchpacks.com/marisaroque/sketch-markup-listify/install"><img src="https://sketchpacks-com.s3.amazonaws.com/assets/badges/sketchpacks-badge-install.png" alt="Install Markup Listify with Sketchpacks" width="160"></a>
+
+
 ## System Requirements
 
-Sketch Markup Listify has been tested on Sketch (version 41) on MacOS Sierra. If you have any problems, drop me a line.
+Sketch Markup Listify has been tested on Sketch (version 46) on MacOS Sierra. If you have any problems, drop me a line.
 
 
 ## Roadmap & Feature Ideas
